@@ -1,8 +1,11 @@
-//
-//  LoginContainerView.swift
-//  Inventory
-//
-//  Created by Aaron LaBeau on 10/18/21.
-//
-
 import Foundation
+import UIKit
+
+class LoginContainerView : UIView {
+    
+    @IBInspectable var cornerRadius: CGFloat = 0 {
+        didSet {
+            layer.cornerRadius = cornerRadius
+        }
+    }
+}

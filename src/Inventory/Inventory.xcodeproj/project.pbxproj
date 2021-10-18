@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		8DFA62E2271E04150026A422 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA62E1271E04150026A422 /* AppDelegate.swift */; };
 		8DFA62E4271E04150026A422 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA62E3271E04150026A422 /* SceneDelegate.swift */; };
-		8DFA62E6271E04150026A422 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA62E5271E04150026A422 /* ViewController.swift */; };
+		8DFA62E6271E04150026A422 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA62E5271E04150026A422 /* LoginViewController.swift */; };
 		8DFA62E9271E04150026A422 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA62E7271E04150026A422 /* Main.storyboard */; };
 		8DFA62EB271E04170026A422 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA62EA271E04170026A422 /* Assets.xcassets */; };
 		8DFA62EE271E04170026A422 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFA62EC271E04170026A422 /* LaunchScreen.storyboard */; };
 		8DFA62F9271E04170026A422 /* InventoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA62F8271E04170026A422 /* InventoryTests.swift */; };
 		8DFA6304271E04170026A422 /* InventoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA6303271E04170026A422 /* InventoryUITests.swift */; };
+		8DFA6315271E16020026A422 /* BorderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA6314271E16020026A422 /* BorderTextField.swift */; };
+		8DFA6317271E1C720026A422 /* LoginContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DFA6316271E1C720026A422 /* LoginContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		8DFA62DE271E04150026A422 /* Inventory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Inventory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFA62E1271E04150026A422 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DFA62E3271E04150026A422 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8DFA62E5271E04150026A422 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8DFA62E5271E04150026A422 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8DFA62E8271E04150026A422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8DFA62EA271E04170026A422 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8DFA62ED271E04170026A422 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		8DFA62FF271E04170026A422 /* InventoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InventoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFA6303271E04170026A422 /* InventoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryUITests.swift; sourceTree = "<group>"; };
 		8DFA6305271E04170026A422 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFA6314271E16020026A422 /* BorderTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderTextField.swift; sourceTree = "<group>"; };
+		8DFA6316271E1C720026A422 /* LoginContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +103,10 @@
 		8DFA62E0271E04150026A422 /* Inventory */ = {
 			isa = PBXGroup;
 			children = (
+				8DFA6313271E15E00026A422 /* Components */,
+				8DFA6311271E081B0026A422 /* Features */,
 				8DFA62E1271E04150026A422 /* AppDelegate.swift */,
 				8DFA62E3271E04150026A422 /* SceneDelegate.swift */,
-				8DFA62E5271E04150026A422 /* ViewController.swift */,
 				8DFA62E7271E04150026A422 /* Main.storyboard */,
 				8DFA62EA271E04170026A422 /* Assets.xcassets */,
 				8DFA62EC271E04170026A422 /* LaunchScreen.storyboard */,
@@ -126,6 +131,31 @@
 				8DFA6305271E04170026A422 /* Info.plist */,
 			);
 			path = InventoryUITests;
+			sourceTree = "<group>";
+		};
+		8DFA6311271E081B0026A422 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8DFA6312271E082F0026A422 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8DFA6312271E082F0026A422 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8DFA62E5271E04150026A422 /* LoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		8DFA6313271E15E00026A422 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				8DFA6314271E16020026A422 /* BorderTextField.swift */,
+				8DFA6316271E1C720026A422 /* LoginContainerView.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DFA62E6271E04150026A422 /* ViewController.swift in Sources */,
+				8DFA62E6271E04150026A422 /* LoginViewController.swift in Sources */,
 				8DFA62E2271E04150026A422 /* AppDelegate.swift in Sources */,
+				8DFA6317271E1C720026A422 /* LoginContainerView.swift in Sources */,
 				8DFA62E4271E04150026A422 /* SceneDelegate.swift in Sources */,
+				8DFA6315271E16020026A422 /* BorderTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
