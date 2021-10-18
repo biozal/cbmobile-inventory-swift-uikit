@@ -1,0 +1,1 @@
+cbmobile-inventory-swift-uikit
